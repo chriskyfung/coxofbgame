@@ -1,0 +1,76 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="zh-hk">
+  <head>
+    <title>達人圈子|撰寫文章練習</title>
+    <meta name="description" content="達人圈子|撰寫文章練習 模擬器">
+    <link rel="icon" href="https://i2.wp.com/www.coxo.hk/wp-content/uploads/2018/10/COXOlogo@500.png?fit=32%2C32" sizes="32x32">
+    <link rel="icon" href="https://i2.wp.com/www.coxo.hk/wp-content/uploads/2018/10/COXOlogo@500.png?fit=192%2C192" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="https://i2.wp.com/www.coxo.hk/wp-content/uploads/2018/10/COXOlogo@500.png?fit=180%2C180">
+    <meta name="msapplication-TileImage" content="https://i2.wp.com/www.coxo.hk/wp-content/uploads/2018/10/COXOlogo@500.png?fit=270%2C270">
+    
+    <meta property="og:image" content="https://i2.wp.com/www.coxo.hk/wp-content/uploads/2018/10/COXOlogo@500.png?fit=500%2C500">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/foo.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+
+  </head>
+  <body>
+    <header>
+      <img class="td-retina-data" data-retina="http://www.coxo.hk/wp-content/uploads/2018/10/logo_X達人圈子-點陣1000-CMYK-300x60.png" src="http://www.coxo.hk/wp-content/uploads/2018/10/logo_X達人圈子-點陣500-CMYK-300x59.png" alt="達人圈子" title="達人圈子" width="150">
+      <h1>
+        撰寫文章練習
+      </h1>
+    </header>
+
+    <main>
+      <div class="post">
+         <form method="post" enctype="multipart/form-data" action="/upload">
+           <span>Group ID: (A-Z) </span><input id="groupid" type="text" name="groupid" pattern="[A-Z]">
+           
+           <br>
+           <span>你的文章：</span>
+           <textarea name="textcontent" rows="10"></textarea>
+           <img id="blah" src="http://placehold.it/180" alt="your image" />
+           <div class="button">
+             <label for="file"><i class="fa fa-photo"></i>
+ 上載圖片(PNG, JPG)</label>
+             <input id="file" type="file" name="file" accept=".png, .jpg, .jpeg">  
+           </div>           
+           <input class="submit" type="submit" value="提交">
+         </form>
+      </div>  
+    </main>
+
+    <footer>
+      <p>Copyright &#169; 2018 <a href="https://github.com/chriskyfung">Chris K. Fung</a> &nbsp;&middot;&nbsp; <a href="http://www.coxo.hk/">達人圈子</a>
+       &nbsp;&middot;&nbsp; Powered with <a href="https://glitch.com">Glitch</a>!</p>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
