@@ -126,6 +126,10 @@ function writeTextFile(fname, obj) {
 };
 
 
+app.get("/help", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/help.html"));
+});
+
 app.get("/results", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/results.html"));
 });

@@ -16,8 +16,27 @@ h1 {
   color: #373fff;  
 }
 
+h2 {
+  font-family: Microsoft JhengHei;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: Microsoft JhengHei;
+}
+
 .bold {
   font-weight: bold;
+}
+
+nav a {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  text-decoration: none;
 }
 
 p {
@@ -104,12 +123,23 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 img {
   max-width:100%;
 }
 
 img#blah{
   display: none;
+}
+
+div.help-post {
+  background: White;
+  max-width: 1024px;
+  padding: 10px 30px 30px;
+  margin:20px 5px ;
 }
 
 div.wrapper {
